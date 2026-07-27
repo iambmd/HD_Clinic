@@ -71,10 +71,13 @@
         <aside class="info-card">
           <h3>{% trans "Opening Hours" %}</h3>
           <ul class="list-unstyled hours-list">
-            <li><span>{% trans "Monday – Friday" %}</span><span>08:00 – 18:00</span></li>
-            <li><span>{% trans "Saturday" %}</span><span>08:00 – 12:00</span></li>
-            <li><span>{% trans "Sunday" %}</span><span>{% trans "Closed" %}</span></li>
+            {% for entry in opening_hours %}
+              <li><span>{{ entry.label }}</span><span>{{ entry.hours }}</span></li>
+            {% endfor %}
           </ul>
+          <p class="small text-muted mb-0 mt-2">
+            {% trans "Appointments can only be booked within these hours." %}
+          </p>
 
           <hr>
 

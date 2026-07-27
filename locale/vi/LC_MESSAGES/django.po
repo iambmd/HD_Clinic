@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-27 10:41-0400\n"
+"POT-Creation-Date: 2026-07-27 11:30-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,15 +16,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-#: .\clinic\forms.py:13
+
+#: .\clinic\forms.py:15
 msgid "Your full name"
 msgstr "Họ và tên của bạn"
 
-#: .\clinic\forms.py:37
+#: .\clinic\forms.py:53
 msgid "Your name"
 msgstr "Tên của bạn"
 
-#: .\clinic\forms.py:46
+#: .\clinic\forms.py:62
 msgid "How can we help?"
 msgstr "Chúng tôi có thể giúp gì cho bạn?"
 
@@ -188,11 +189,47 @@ msgstr "tin nhắn liên hệ"
 msgid "contact messages"
 msgstr "tin nhắn liên hệ"
 
+#: .\clinic\opening_hours.py:28
+msgid "Monday – Friday"
+msgstr "Thứ Hai – Thứ Sáu"
+
+#: .\clinic\opening_hours.py:29
+msgid "Saturday – Sunday"
+msgstr "Thứ Bảy – Chủ Nhật"
+
+#: .\clinic\opening_hours.py:41
+msgid "Closed"
+msgstr "Nghỉ"
+
+#: .\clinic\opening_hours.py:68
+msgid "Please choose today or a later date."
+msgstr "Vui lòng chọn ngày hôm nay hoặc một ngày sau đó."
+
+#: .\clinic\opening_hours.py:75
+#, python-format
+msgid "The clinic is closed on %(day)s."
+msgstr "Phòng khám nghỉ vào %(day)s."
+
+#: .\clinic\opening_hours.py:83
+#, python-format
+msgid ""
+"The clinic is open %(hours)s on %(day)s. Please choose a time within those "
+"hours."
+msgstr "Phòng khám mở cửa %(hours)s vào %(day)s. Vui lòng chọn giờ trong khung giờ đó."
+
+#: .\clinic\opening_hours.py:89
+msgid ""
+"That time has already passed today. Please choose a later time or another "
+"day."
+msgstr "Giờ này đã qua trong ngày hôm nay. Vui lòng chọn giờ muộn hơn hoặc một ngày khác."
+
 #: .\clinic\views.py:48
 msgid ""
 "Thank you! Your appointment request has been received. We will call you "
 "shortly to confirm."
-msgstr "Cảm ơn bạn! Chúng tôi đã nhận được yêu cầu đặt lịch hẹn và sẽ gọi lại để xác nhận trong thời gian sớm nhất."
+msgstr ""
+"Cảm ơn bạn! Chúng tôi đã nhận được yêu cầu đặt lịch hẹn và sẽ gọi lại để xác "
+"nhận trong thời gian sớm nhất."
 
 #: .\clinic\views.py:61
 msgid "Thank you! Your message has been sent."
@@ -305,14 +342,21 @@ msgid ""
 "HES Clinic was founded to bring specialist ear, nose and throat care to "
 "families in Hà Nội. What began as a small consulting practice has grown into "
 "a trusted ENT clinic serving thousands of patients each year."
-msgstr "Phòng Khám HES được thành lập nhằm mang dịch vụ chăm sóc chuyên khoa Tai Mũi Họng đến với các gia đình tại Hà Nội. Khởi đầu từ một phòng tư vấn nhỏ, phòng khám đã phát triển thành địa chỉ Tai Mũi Họng tin cậy, phục vụ hàng nghìn bệnh nhân mỗi năm."
+msgstr ""
+"Phòng Khám HES được thành lập nhằm mang dịch vụ chăm sóc chuyên khoa Tai Mũi "
+"Họng đến với các gia đình tại Hà Nội. Khởi đầu từ một phòng tư vấn nhỏ, "
+"phòng khám đã phát triển thành địa chỉ Tai Mũi Họng tin cậy, phục vụ hàng "
+"nghìn bệnh nhân mỗi năm."
 
 #: .\templates\clinic\about.html:23
 msgid ""
 "We combine modern diagnostic equipment with an unhurried, personal approach "
 "— every patient gets a clear explanation of their condition and a treatment "
 "plan they understand."
-msgstr "Chúng tôi kết hợp thiết bị chẩn đoán hiện đại với cách tiếp cận tận tình, không vội vã — mỗi bệnh nhân đều được giải thích rõ ràng về tình trạng của mình và nhận một phác đồ điều trị dễ hiểu."
+msgstr ""
+"Chúng tôi kết hợp thiết bị chẩn đoán hiện đại với cách tiếp cận tận tình, "
+"không vội vã — mỗi bệnh nhân đều được giải thích rõ ràng về tình trạng của "
+"mình và nhận một phác đồ điều trị dễ hiểu."
 
 #: .\templates\clinic\about.html:27
 msgid "Our Mission"
@@ -323,7 +367,10 @@ msgid ""
 "To deliver accurate diagnosis and effective, evidence-based treatment for "
 "ENT conditions — with honesty, respect and genuine care for every patient "
 "who walks through our door."
-msgstr "Mang đến chẩn đoán chính xác và điều trị hiệu quả, dựa trên bằng chứng cho các bệnh lý Tai Mũi Họng — với sự trung thực, tôn trọng và tận tâm với mọi bệnh nhân đến với chúng tôi."
+msgstr ""
+"Mang đến chẩn đoán chính xác và điều trị hiệu quả, dựa trên bằng chứng cho "
+"các bệnh lý Tai Mũi Họng — với sự trung thực, tôn trọng và tận tâm với mọi "
+"bệnh nhân đến với chúng tôi."
 
 #: .\templates\clinic\about.html:32
 msgid "Evidence-based medicine"
@@ -389,23 +436,11 @@ msgstr "Xác nhận đặt lịch"
 msgid "Opening Hours"
 msgstr "Giờ làm việc"
 
-#: .\templates\clinic\appointment.html:74 .\templates\clinic\location.html:36
-msgid "Monday – Friday"
-msgstr "Thứ Hai – Thứ Sáu"
+#: .\templates\clinic\appointment.html:79
+msgid "Appointments can only be booked within these hours."
+msgstr "Chỉ có thể đặt lịch hẹn trong khung giờ này."
 
-#: .\templates\clinic\appointment.html:75 .\templates\clinic\location.html:37
-msgid "Saturday"
-msgstr "Thứ Bảy"
-
-#: .\templates\clinic\appointment.html:76 .\templates\clinic\location.html:38
-msgid "Sunday"
-msgstr "Chủ Nhật"
-
-#: .\templates\clinic\appointment.html:76 .\templates\clinic\location.html:38
-msgid "Closed"
-msgstr "Nghỉ"
-
-#: .\templates\clinic\appointment.html:81
+#: .\templates\clinic\appointment.html:84
 msgid "Need help?"
 msgstr "Cần hỗ trợ?"
 
@@ -462,7 +497,9 @@ msgstr "Chăm Sóc Tai Mũi Họng Chuyên Sâu"
 msgid ""
 "Led by Dr. Bùi Hồng Sơn, MS in Otolaryngology — evidence-based, patient-"
 "centred treatment for the whole family."
-msgstr "Dẫn dắt bởi Bác sĩ Bùi Hồng Sơn, Thạc sĩ Tai Mũi Họng — điều trị dựa trên bằng chứng, lấy bệnh nhân làm trung tâm cho cả gia đình."
+msgstr ""
+"Dẫn dắt bởi Bác sĩ Bùi Hồng Sơn, Thạc sĩ Tai Mũi Họng — điều trị dựa trên "
+"bằng chứng, lấy bệnh nhân làm trung tâm cho cả gia đình."
 
 #: .\templates\clinic\home.html:33
 msgid "Years of Experience"
@@ -553,3 +590,9 @@ msgstr "Chưa rõ bạn cần dịch vụ nào?"
 #: .\templates\clinic\services.html:41
 msgid "Call us and we will help you find the right consultation."
 msgstr "Hãy gọi cho chúng tôi để được tư vấn phù hợp."
+
+#~ msgid "Saturday"
+#~ msgstr "Thứ Bảy"
+
+#~ msgid "Sunday"
+#~ msgstr "Chủ Nhật"

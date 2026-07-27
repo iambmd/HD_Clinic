@@ -1,6 +1,8 @@
 from django import forms
+from django.utils import timezone
 from django.utils.translation import gettext_lazy as _
 
+from . import opening_hours
 from .models import Appointment, ContactMessage
 
 
@@ -26,6 +28,20 @@ class AppointmentForm(forms.ModelForm):
             ),
             'branch': forms.Select(attrs={'class': 'form-select'}),
         }
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        # Let the browser grey out past dates before the form is even submitted.
+        self.fields['preferred_date'].widget.attrs['min'] = timezone.localdate().isoformat()
+
+    def clean(self):
+        cleaned_data = super().clean()
+        errors = opening_hours.slot_errors(
+            cleaned_data.get('preferred_date'), cleaned_data.get('preferred_time')
+        )
+        for field, message in errors.items():
+            self.add_error(field, message)
+        return cleaned_data
 
 
 class ContactForm(forms.ModelForm):

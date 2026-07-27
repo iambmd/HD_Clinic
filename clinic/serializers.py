@@ -1,5 +1,6 @@
 from rest_framework import serializers
 
+from . import opening_hours
 from .models import Appointment, Article, ContactMessage, Doctor, Service
 
 
@@ -32,6 +33,14 @@ class AppointmentSerializer(serializers.ModelSerializer):
             'preferred_date', 'preferred_time', 'branch', 'created_at',
         ]
         read_only_fields = ['id', 'created_at']
+
+    def validate(self, attrs):
+        errors = opening_hours.slot_errors(
+            attrs.get('preferred_date'), attrs.get('preferred_time')
+        )
+        if errors:
+            raise serializers.ValidationError(errors)
+        return attrs
 
 
 class ContactMessageSerializer(serializers.ModelSerializer):

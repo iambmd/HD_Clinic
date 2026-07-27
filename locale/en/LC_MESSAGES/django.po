@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-27 10:41-0400\n"
+"POT-Creation-Date: 2026-07-27 11:30-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,15 +16,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-#: .\clinic\forms.py:13
+
+#: .\clinic\forms.py:15
 msgid "Your full name"
 msgstr ""
 
-#: .\clinic\forms.py:37
+#: .\clinic\forms.py:53
 msgid "Your name"
 msgstr ""
 
-#: .\clinic\forms.py:46
+#: .\clinic\forms.py:62
 msgid "How can we help?"
 msgstr ""
 
@@ -186,6 +187,40 @@ msgstr ""
 
 #: .\clinic\models.py:136
 msgid "contact messages"
+msgstr ""
+
+#: .\clinic\opening_hours.py:28
+msgid "Monday – Friday"
+msgstr ""
+
+#: .\clinic\opening_hours.py:29
+msgid "Saturday – Sunday"
+msgstr ""
+
+#: .\clinic\opening_hours.py:41
+msgid "Closed"
+msgstr ""
+
+#: .\clinic\opening_hours.py:68
+msgid "Please choose today or a later date."
+msgstr ""
+
+#: .\clinic\opening_hours.py:75
+#, python-format
+msgid "The clinic is closed on %(day)s."
+msgstr ""
+
+#: .\clinic\opening_hours.py:83
+#, python-format
+msgid ""
+"The clinic is open %(hours)s on %(day)s. Please choose a time within those "
+"hours."
+msgstr ""
+
+#: .\clinic\opening_hours.py:89
+msgid ""
+"That time has already passed today. Please choose a later time or another "
+"day."
 msgstr ""
 
 #: .\clinic\views.py:48
@@ -389,23 +424,11 @@ msgstr ""
 msgid "Opening Hours"
 msgstr ""
 
-#: .\templates\clinic\appointment.html:74 .\templates\clinic\location.html:36
-msgid "Monday – Friday"
+#: .\templates\clinic\appointment.html:79
+msgid "Appointments can only be booked within these hours."
 msgstr ""
 
-#: .\templates\clinic\appointment.html:75 .\templates\clinic\location.html:37
-msgid "Saturday"
-msgstr ""
-
-#: .\templates\clinic\appointment.html:76 .\templates\clinic\location.html:38
-msgid "Sunday"
-msgstr ""
-
-#: .\templates\clinic\appointment.html:76 .\templates\clinic\location.html:38
-msgid "Closed"
-msgstr ""
-
-#: .\templates\clinic\appointment.html:81
+#: .\templates\clinic\appointment.html:84
 msgid "Need help?"
 msgstr ""
 
