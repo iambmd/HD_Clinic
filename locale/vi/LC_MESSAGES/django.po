@@ -1,0 +1,555 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-27 10:41-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+#: .\clinic\forms.py:13
+msgid "Your full name"
+msgstr "Họ và tên của bạn"
+
+#: .\clinic\forms.py:37
+msgid "Your name"
+msgstr "Tên của bạn"
+
+#: .\clinic\forms.py:46
+msgid "How can we help?"
+msgstr "Chúng tôi có thể giúp gì cho bạn?"
+
+#: .\clinic\models.py:17
+msgid "Ear"
+msgstr "Tai"
+
+#: .\clinic\models.py:18
+msgid "Nose"
+msgstr "Mũi"
+
+#: .\clinic\models.py:19
+msgid "Throat"
+msgstr "Họng"
+
+#: .\clinic\models.py:21 .\clinic\models.py:69
+msgid "title (EN)"
+msgstr "tiêu đề (EN)"
+
+#: .\clinic\models.py:22 .\clinic\models.py:70
+msgid "title (VI)"
+msgstr "tiêu đề (VI)"
+
+#: .\clinic\models.py:23
+msgid "description (EN)"
+msgstr "mô tả (EN)"
+
+#: .\clinic\models.py:24
+msgid "description (VI)"
+msgstr "mô tả (VI)"
+
+#: .\clinic\models.py:26
+msgid "icon"
+msgstr "biểu tượng"
+
+#: .\clinic\models.py:27
+msgid "Bootstrap Icons class name, e.g. bi-ear"
+msgstr "Tên lớp Bootstrap Icons, ví dụ bi-ear"
+
+#: .\clinic\models.py:29
+msgid "category"
+msgstr "danh mục"
+
+#: .\clinic\models.py:32
+msgid "service"
+msgstr "dịch vụ"
+
+#: .\clinic\models.py:33
+msgid "services"
+msgstr "dịch vụ"
+
+#: .\clinic\models.py:49 .\clinic\models.py:128
+msgid "name"
+msgstr "tên"
+
+#: .\clinic\models.py:50
+msgid "specialty"
+msgstr "chuyên khoa"
+
+#: .\clinic\models.py:51
+msgid "biography (EN)"
+msgstr "tiểu sử (EN)"
+
+#: .\clinic\models.py:52
+msgid "biography (VI)"
+msgstr "tiểu sử (VI)"
+
+#: .\clinic\models.py:53
+msgid "photo"
+msgstr "ảnh"
+
+#: .\clinic\models.py:56
+msgid "doctor"
+msgstr "bác sĩ"
+
+#: .\clinic\models.py:57
+msgid "doctors"
+msgstr "bác sĩ"
+
+#: .\clinic\models.py:71
+msgid "content (EN)"
+msgstr "nội dung (EN)"
+
+#: .\clinic\models.py:72
+msgid "content (VI)"
+msgstr "nội dung (VI)"
+
+#: .\clinic\models.py:73
+msgid "thumbnail"
+msgstr "ảnh thu nhỏ"
+
+#: .\clinic\models.py:74
+msgid "published date"
+msgstr "ngày đăng"
+
+#: .\clinic\models.py:75
+msgid "slug"
+msgstr "đường dẫn tĩnh"
+
+#: .\clinic\models.py:78
+msgid "article"
+msgstr "bài viết"
+
+#: .\clinic\models.py:79
+msgid "articles"
+msgstr "bài viết"
+
+#: .\clinic\models.py:106
+msgid "Main Clinic – Dương Nội"
+msgstr "Phòng khám chính – Dương Nội"
+
+#: .\clinic\models.py:108
+msgid "full name"
+msgstr "họ và tên"
+
+#: .\clinic\models.py:109 .\clinic\models.py:129
+msgid "phone"
+msgstr "điện thoại"
+
+#: .\clinic\models.py:110 .\clinic\models.py:130
+msgid "email"
+msgstr "email"
+
+#: .\clinic\models.py:111
+msgid "preferred date"
+msgstr "ngày mong muốn"
+
+#: .\clinic\models.py:112
+msgid "preferred time"
+msgstr "giờ mong muốn"
+
+#: .\clinic\models.py:114
+msgid "branch"
+msgstr "chi nhánh"
+
+#: .\clinic\models.py:116
+msgid "created at"
+msgstr "thời điểm tạo"
+
+#: .\clinic\models.py:119
+msgid "appointment"
+msgstr "lịch hẹn"
+
+#: .\clinic\models.py:120
+msgid "appointments"
+msgstr "lịch hẹn"
+
+#: .\clinic\models.py:131
+msgid "message"
+msgstr "tin nhắn"
+
+#: .\clinic\models.py:132
+msgid "sent at"
+msgstr "thời điểm gửi"
+
+#: .\clinic\models.py:135
+msgid "contact message"
+msgstr "tin nhắn liên hệ"
+
+#: .\clinic\models.py:136
+msgid "contact messages"
+msgstr "tin nhắn liên hệ"
+
+#: .\clinic\views.py:48
+msgid ""
+"Thank you! Your appointment request has been received. We will call you "
+"shortly to confirm."
+msgstr "Cảm ơn bạn! Chúng tôi đã nhận được yêu cầu đặt lịch hẹn và sẽ gọi lại để xác nhận trong thời gian sớm nhất."
+
+#: .\clinic\views.py:61
+msgid "Thank you! Your message has been sent."
+msgstr "Cảm ơn bạn! Tin nhắn của bạn đã được gửi."
+
+#: .\hes_clinic\settings.py:81
+msgid "English"
+msgstr "Tiếng Anh"
+
+#: .\hes_clinic\settings.py:82
+msgid "Vietnamese"
+msgstr "Tiếng Việt"
+
+#: .\templates\base.html:6 .\templates\base.html:18 .\templates\base.html:74
+#: .\templates\base.html:103 .\templates\clinic\about.html:4
+#: .\templates\clinic\appointment.html:4
+#: .\templates\clinic\article_detail.html:4 .\templates\clinic\contact.html:4
+#: .\templates\clinic\location.html:4 .\templates\clinic\news.html:4
+#: .\templates\clinic\services.html:4
+msgid "HES Clinic"
+msgstr "Phòng Khám HES"
+
+#: .\templates\base.html:7
+msgid "ENT specialty clinic in Hà Nội — ear, nose and throat care."
+msgstr "Phòng khám chuyên khoa Tai Mũi Họng tại Hà Nội."
+
+#: .\templates\base.html:21
+msgid "Toggle navigation"
+msgstr "Mở menu"
+
+#: .\templates\base.html:27 .\templates\clinic\article_detail.html:12
+msgid "Home"
+msgstr "Trang chủ"
+
+#: .\templates\base.html:28
+msgid "About"
+msgstr "Giới thiệu"
+
+#: .\templates\base.html:29 .\templates\base.html:93
+#: .\templates\clinic\services.html:4
+msgid "Services"
+msgstr "Dịch vụ"
+
+#: .\templates\base.html:30 .\templates\clinic\article_detail.html:13
+msgid "News"
+msgstr "Tin tức"
+
+#: .\templates\base.html:31 .\templates\base.html:82
+#: .\templates\clinic\contact.html:4
+msgid "Contact"
+msgstr "Liên hệ"
+
+#: .\templates\base.html:32 .\templates\clinic\location.html:4
+msgid "Location"
+msgstr "Địa chỉ"
+
+#: .\templates\base.html:36
+msgid "Book Now"
+msgstr "Đặt lịch"
+
+#: .\templates\base.html:60
+msgid "Close"
+msgstr "Đóng"
+
+#: .\templates\base.html:77
+msgid "Specialist ear, nose and throat care in Hà Nội."
+msgstr "Chăm sóc chuyên khoa Tai Mũi Họng tại Hà Nội."
+
+#: .\templates\base.html:91
+msgid "Quick Links"
+msgstr "Liên kết nhanh"
+
+#: .\templates\base.html:94 .\templates\clinic\appointment.html:4
+#: .\templates\clinic\appointment.html:9 .\templates\clinic\home.html:17
+#: .\templates\clinic\home.html:139 .\templates\clinic\location.html:47
+msgid "Book an Appointment"
+msgstr "Đặt lịch hẹn"
+
+#: .\templates\base.html:95 .\templates\clinic\home.html:106
+#: .\templates\clinic\news.html:4
+msgid "Health News"
+msgstr "Tin tức sức khỏe"
+
+#: .\templates\base.html:96 .\templates\clinic\location.html:9
+msgid "Find Us"
+msgstr "Tìm đường"
+
+#: .\templates\base.html:103
+msgid "All rights reserved."
+msgstr "Bảo lưu mọi quyền."
+
+#: .\templates\base.html:108
+msgid "Call now"
+msgstr "Gọi ngay"
+
+#: .\templates\clinic\about.html:4
+msgid "About Us"
+msgstr "Về chúng tôi"
+
+#: .\templates\clinic\about.html:9
+msgid "About Our Clinic"
+msgstr "Về phòng khám của chúng tôi"
+
+#: .\templates\clinic\about.html:18
+msgid "Our Story"
+msgstr "Câu chuyện của chúng tôi"
+
+#: .\templates\clinic\about.html:20
+msgid ""
+"HES Clinic was founded to bring specialist ear, nose and throat care to "
+"families in Hà Nội. What began as a small consulting practice has grown into "
+"a trusted ENT clinic serving thousands of patients each year."
+msgstr "Phòng Khám HES được thành lập nhằm mang dịch vụ chăm sóc chuyên khoa Tai Mũi Họng đến với các gia đình tại Hà Nội. Khởi đầu từ một phòng tư vấn nhỏ, phòng khám đã phát triển thành địa chỉ Tai Mũi Họng tin cậy, phục vụ hàng nghìn bệnh nhân mỗi năm."
+
+#: .\templates\clinic\about.html:23
+msgid ""
+"We combine modern diagnostic equipment with an unhurried, personal approach "
+"— every patient gets a clear explanation of their condition and a treatment "
+"plan they understand."
+msgstr "Chúng tôi kết hợp thiết bị chẩn đoán hiện đại với cách tiếp cận tận tình, không vội vã — mỗi bệnh nhân đều được giải thích rõ ràng về tình trạng của mình và nhận một phác đồ điều trị dễ hiểu."
+
+#: .\templates\clinic\about.html:27
+msgid "Our Mission"
+msgstr "Sứ mệnh của chúng tôi"
+
+#: .\templates\clinic\about.html:29
+msgid ""
+"To deliver accurate diagnosis and effective, evidence-based treatment for "
+"ENT conditions — with honesty, respect and genuine care for every patient "
+"who walks through our door."
+msgstr "Mang đến chẩn đoán chính xác và điều trị hiệu quả, dựa trên bằng chứng cho các bệnh lý Tai Mũi Họng — với sự trung thực, tôn trọng và tận tâm với mọi bệnh nhân đến với chúng tôi."
+
+#: .\templates\clinic\about.html:32
+msgid "Evidence-based medicine"
+msgstr "Y học dựa trên bằng chứng"
+
+#: .\templates\clinic\about.html:33
+msgid "Transparent pricing and advice"
+msgstr "Chi phí và tư vấn minh bạch"
+
+#: .\templates\clinic\about.html:34
+msgid "Care for patients of all ages"
+msgstr "Chăm sóc bệnh nhân mọi lứa tuổi"
+
+#: .\templates\clinic\about.html:35
+msgid "Bilingual consultation (EN / VI)"
+msgstr "Tư vấn song ngữ (Anh / Việt)"
+
+#: .\templates\clinic\about.html:45
+msgid "Our Doctors"
+msgstr "Đội ngũ bác sĩ"
+
+#: .\templates\clinic\about.html:46
+msgid "Experienced specialists dedicated to your care."
+msgstr "Các chuyên gia giàu kinh nghiệm, tận tâm với sức khỏe của bạn."
+
+#: .\templates\clinic\about.html:64
+msgid "No doctor profiles have been added yet."
+msgstr "Chưa có hồ sơ bác sĩ nào."
+
+#: .\templates\clinic\appointment.html:10
+msgid "Fill in the form and we will call you to confirm your visit."
+msgstr "Điền vào biểu mẫu và chúng tôi sẽ gọi lại để xác nhận lịch khám."
+
+#: .\templates\clinic\appointment.html:27
+msgid "Full name"
+msgstr "Họ và tên"
+
+#: .\templates\clinic\appointment.html:33 .\templates\clinic\contact.html:33
+msgid "Phone"
+msgstr "Điện thoại"
+
+#: .\templates\clinic\appointment.html:39 .\templates\clinic\contact.html:39
+msgid "Email"
+msgstr "Email"
+
+#: .\templates\clinic\appointment.html:45
+msgid "Preferred date"
+msgstr "Ngày mong muốn"
+
+#: .\templates\clinic\appointment.html:51
+msgid "Preferred time"
+msgstr "Giờ mong muốn"
+
+#: .\templates\clinic\appointment.html:57
+msgid "Branch"
+msgstr "Chi nhánh"
+
+#: .\templates\clinic\appointment.html:65
+msgid "Confirm Booking"
+msgstr "Xác nhận đặt lịch"
+
+#: .\templates\clinic\appointment.html:72 .\templates\clinic\location.html:34
+msgid "Opening Hours"
+msgstr "Giờ làm việc"
+
+#: .\templates\clinic\appointment.html:74 .\templates\clinic\location.html:36
+msgid "Monday – Friday"
+msgstr "Thứ Hai – Thứ Sáu"
+
+#: .\templates\clinic\appointment.html:75 .\templates\clinic\location.html:37
+msgid "Saturday"
+msgstr "Thứ Bảy"
+
+#: .\templates\clinic\appointment.html:76 .\templates\clinic\location.html:38
+msgid "Sunday"
+msgstr "Chủ Nhật"
+
+#: .\templates\clinic\appointment.html:76 .\templates\clinic\location.html:38
+msgid "Closed"
+msgstr "Nghỉ"
+
+#: .\templates\clinic\appointment.html:81
+msgid "Need help?"
+msgstr "Cần hỗ trợ?"
+
+#: .\templates\clinic\article_detail.html:33
+msgid "Back to News"
+msgstr "Quay lại tin tức"
+
+#: .\templates\clinic\article_detail.html:44
+msgid "Related Articles"
+msgstr "Bài viết liên quan"
+
+#: .\templates\clinic\article_detail.html:55 .\templates\clinic\home.html:122
+#: .\templates\clinic\news.html:28
+msgid "Read more"
+msgstr "Đọc tiếp"
+
+#: .\templates\clinic\contact.html:9
+msgid "Contact Us"
+msgstr "Liên hệ với chúng tôi"
+
+#: .\templates\clinic\contact.html:10
+msgid "We are happy to answer your questions."
+msgstr "Chúng tôi sẵn sàng giải đáp mọi thắc mắc của bạn."
+
+#: .\templates\clinic\contact.html:27
+msgid "Name"
+msgstr "Họ tên"
+
+#: .\templates\clinic\contact.html:45
+msgid "Message"
+msgstr "Nội dung"
+
+#: .\templates\clinic\contact.html:53
+msgid "Send Message"
+msgstr "Gửi tin nhắn"
+
+#: .\templates\clinic\contact.html:60
+msgid "Clinic Information"
+msgstr "Thông tin phòng khám"
+
+#: .\templates\clinic\contact.html:67
+msgid "View on Map"
+msgstr "Xem trên bản đồ"
+
+#: .\templates\clinic\home.html:4
+msgid "HES Clinic – ENT Specialists in Hà Nội"
+msgstr "Phòng Khám HES – Chuyên khoa Tai Mũi Họng tại Hà Nội"
+
+#: .\templates\clinic\home.html:11
+msgid "Expert Ear, Nose &amp; Throat Care"
+msgstr "Chăm Sóc Tai Mũi Họng Chuyên Sâu"
+
+#: .\templates\clinic\home.html:13
+msgid ""
+"Led by Dr. Bùi Hồng Sơn, MS in Otolaryngology — evidence-based, patient-"
+"centred treatment for the whole family."
+msgstr "Dẫn dắt bởi Bác sĩ Bùi Hồng Sơn, Thạc sĩ Tai Mũi Họng — điều trị dựa trên bằng chứng, lấy bệnh nhân làm trung tâm cho cả gia đình."
+
+#: .\templates\clinic\home.html:33
+msgid "Years of Experience"
+msgstr "Năm kinh nghiệm"
+
+#: .\templates\clinic\home.html:37
+msgid "Patients Treated"
+msgstr "Bệnh nhân đã điều trị"
+
+#: .\templates\clinic\home.html:41
+msgid "ENT Services"
+msgstr "Dịch vụ Tai Mũi Họng"
+
+#: .\templates\clinic\home.html:45
+#, python-format
+msgid "%% Satisfaction"
+msgstr "%% Hài lòng"
+
+#: .\templates\clinic\home.html:54
+msgid "Our Services"
+msgstr "Dịch vụ của chúng tôi"
+
+#: .\templates\clinic\home.html:55
+msgid ""
+"Comprehensive diagnosis and treatment across ear, nose and throat conditions."
+msgstr "Chẩn đoán và điều trị toàn diện các bệnh lý tai, mũi và họng."
+
+#: .\templates\clinic\home.html:69
+msgid "No services have been added yet."
+msgstr "Chưa có dịch vụ nào."
+
+#: .\templates\clinic\home.html:75
+msgid "View All Services"
+msgstr "Xem tất cả dịch vụ"
+
+#: .\templates\clinic\home.html:96
+msgid "More About Us"
+msgstr "Tìm hiểu thêm"
+
+#: .\templates\clinic\home.html:107
+msgid "Practical guidance from our specialists."
+msgstr "Hướng dẫn thiết thực từ các chuyên gia của chúng tôi."
+
+#: .\templates\clinic\home.html:128 .\templates\clinic\news.html:34
+msgid "No articles published yet."
+msgstr "Chưa có bài viết nào."
+
+#: .\templates\clinic\home.html:136
+msgid "Ready to see a specialist?"
+msgstr "Sẵn sàng gặp chuyên gia?"
+
+#: .\templates\clinic\home.html:137
+msgid "Book an appointment today and get expert ENT care."
+msgstr "Đặt lịch hẹn hôm nay để được chăm sóc Tai Mũi Họng chuyên sâu."
+
+#: .\templates\clinic\location.html:23
+msgid "Clinic location map"
+msgstr "Bản đồ vị trí phòng khám"
+
+#: .\templates\clinic\location.html:29
+msgid "Address"
+msgstr "Địa chỉ"
+
+#: .\templates\clinic\news.html:9
+msgid "Health News &amp; Advice"
+msgstr "Tin Tức &amp; Tư Vấn Sức Khỏe"
+
+#: .\templates\clinic\news.html:10
+msgid "Practical guidance from our ENT specialists."
+msgstr "Hướng dẫn thiết thực từ các bác sĩ Tai Mũi Họng của chúng tôi."
+
+#: .\templates\clinic\services.html:9
+msgid "Our ENT Services"
+msgstr "Dịch vụ Tai Mũi Họng của chúng tôi"
+
+#: .\templates\clinic\services.html:10
+msgid "Specialist diagnosis and treatment for ear, nose and throat conditions."
+msgstr "Chẩn đoán và điều trị chuyên sâu các bệnh lý tai, mũi và họng."
+
+#: .\templates\clinic\services.html:31
+msgid "No services in this category yet."
+msgstr "Chưa có dịch vụ nào trong danh mục này."
+
+#: .\templates\clinic\services.html:40
+msgid "Not sure which service you need?"
+msgstr "Chưa rõ bạn cần dịch vụ nào?"
+
+#: .\templates\clinic\services.html:41
+msgid "Call us and we will help you find the right consultation."
+msgstr "Hãy gọi cho chúng tôi để được tư vấn phù hợp."

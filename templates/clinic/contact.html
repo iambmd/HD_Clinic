@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Contact" %} – {% trans "HES Clinic" %}{% endblock %}
+
+{% block content %}
+<section class="page-header">
+  <div class="container">
+    <h1>{% trans "Contact Us" %}</h1>
+    <p>{% trans "We are happy to answer your questions." %}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-7">
+        <form method="post" class="form-card needs-loading" novalidate>
+          {% csrf_token %}
+
+          {% if form.non_field_errors %}
+            <div class="alert alert-danger">{{ form.non_field_errors }}</div>
+          {% endif %}
+
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="{{ form.name.id_for_label }}" class="form-label">{% trans "Name" %}</label>
+              {{ form.name }}
+              {% for error in form.name.errors %}<div class="field-error">{{ error }}</div>{% endfor %}
+            </div>
+
+            <div class="col-md-6">
+              <label for="{{ form.phone.id_for_label }}" class="form-label">{% trans "Phone" %}</label>
+              {{ form.phone }}
+              {% for error in form.phone.errors %}<div class="field-error">{{ error }}</div>{% endfor %}
+            </div>
+
+            <div class="col-12">
+              <label for="{{ form.email.id_for_label }}" class="form-label">{% trans "Email" %}</label>
+              {{ form.email }}
+              {% for error in form.email.errors %}<div class="field-error">{{ error }}</div>{% endfor %}
+            </div>
+
+            <div class="col-12">
+              <label for="{{ form.message.id_for_label }}" class="form-label">{% trans "Message" %}</label>
+              {{ form.message }}
+              {% for error in form.message.errors %}<div class="field-error">{{ error }}</div>{% endfor %}
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-accent btn-lg mt-4">
+            <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+            <i class="bi bi-send"></i> {% trans "Send Message" %}
+          </button>
+        </form>
+      </div>
+
+      <div class="col-lg-5">
+        <aside class="info-card">
+          <h3>{% trans "Clinic Information" %}</h3>
+          <p class="mb-2"><strong>{{ clinic.name_vi }}</strong></p>
+          <p class="mb-2"><i class="bi bi-telephone"></i> <a href="tel:{{ clinic.phone|cut:' ' }}">{{ clinic.phone }}</a></p>
+          <p class="mb-2"><i class="bi bi-envelope"></i> <a href="mailto:{{ clinic.email }}">{{ clinic.email }}</a></p>
+          <p class="mb-3"><i class="bi bi-geo-alt"></i> {{ clinic.address }}</p>
+
+          <a href="{% url 'clinic:location' %}" class="btn btn-primary-clinic w-100">
+            <i class="bi bi-map"></i> {% trans "View on Map" %}
+          </a>
+        </aside>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

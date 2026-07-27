@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "About Us" %} – {% trans "HES Clinic" %}{% endblock %}
+
+{% block content %}
+<section class="page-header">
+  <div class="container">
+    <h1>{% trans "About Our Clinic" %}</h1>
+    <p>{{ clinic.name_vi }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-6 reveal">
+        <h2>{% trans "Our Story" %}</h2>
+        <p>
+          {% trans "HES Clinic was founded to bring specialist ear, nose and throat care to families in Hà Nội. What began as a small consulting practice has grown into a trusted ENT clinic serving thousands of patients each year." %}
+        </p>
+        <p>
+          {% trans "We combine modern diagnostic equipment with an unhurried, personal approach — every patient gets a clear explanation of their condition and a treatment plan they understand." %}
+        </p>
+      </div>
+      <div class="col-lg-6 reveal">
+        <h2>{% trans "Our Mission" %}</h2>
+        <p>
+          {% trans "To deliver accurate diagnosis and effective, evidence-based treatment for ENT conditions — with honesty, respect and genuine care for every patient who walks through our door." %}
+        </p>
+        <ul class="value-list">
+          <li><i class="bi bi-check-circle-fill"></i> {% trans "Evidence-based medicine" %}</li>
+          <li><i class="bi bi-check-circle-fill"></i> {% trans "Transparent pricing and advice" %}</li>
+          <li><i class="bi bi-check-circle-fill"></i> {% trans "Care for patients of all ages" %}</li>
+          <li><i class="bi bi-check-circle-fill"></i> {% trans "Bilingual consultation (EN / VI)" %}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>{% trans "Our Doctors" %}</h2>
+      <p>{% trans "Experienced specialists dedicated to your care." %}</p>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+      {% for doctor in doctors %}
+        <div class="col-md-8 col-lg-6 reveal">
+          <article class="doctor-card">
+            {% if doctor.photo %}
+              <img src="{{ doctor.photo.url }}" alt="{{ doctor.name }}" class="doctor-photo">
+            {% else %}
+              <div class="doctor-photo doctor-photo-placeholder"><i class="bi bi-person-badge"></i></div>
+            {% endif %}
+            <h3>{{ doctor.name }}</h3>
+            <p class="text-accent fw-semibold">{{ doctor.specialty }}</p>
+            <p>{{ doctor.bio }}</p>
+          </article>
+        </div>
+      {% empty %}
+        <p class="text-muted text-center">{% trans "No doctor profiles have been added yet." %}</p>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}

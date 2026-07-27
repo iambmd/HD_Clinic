@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{{ article.title }} – {% trans "HES Clinic" %}{% endblock %}
+{% block meta_description %}{{ article.excerpt }}{% endblock %}
+
+{% block content %}
+<section class="page-header">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb breadcrumb-light">
+        <li class="breadcrumb-item"><a href="{% url 'clinic:home' %}">{% trans "Home" %}</a></li>
+        <li class="breadcrumb-item"><a href="{% url 'clinic:news' %}">{% trans "News" %}</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{{ article.title|truncatechars:40 }}</li>
+      </ol>
+    </nav>
+    <h1>{{ article.title }}</h1>
+    <p><i class="bi bi-calendar3"></i> {{ article.published_date|date:"d F Y" }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        {% if article.thumbnail %}
+          <img src="{{ article.thumbnail.url }}" alt="{{ article.title }}" class="img-fluid rounded mb-4">
+        {% endif %}
+        <div class="article-content">{{ article.content|linebreaks }}</div>
+
+        <hr class="my-5">
+        <a href="{% url 'clinic:news' %}" class="btn btn-primary-clinic">
+          <i class="bi bi-arrow-left"></i> {% trans "Back to News" %}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% if related %}
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>{% trans "Related Articles" %}</h2>
+    </div>
+    <div class="row g-4">
+      {% for item in related %}
+        <div class="col-md-6 col-lg-4 reveal">
+          <article class="article-card h-100">
+            <div class="article-body">
+              <time class="article-date">{{ item.published_date|date:"d M Y" }}</time>
+              <h3><a href="{{ item.get_absolute_url }}">{{ item.title }}</a></h3>
+              <p>{{ item.excerpt }}</p>
+              <a href="{{ item.get_absolute_url }}" class="read-more">
+                {% trans "Read more" %} <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+{% endblock %}

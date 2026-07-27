@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Services" %} – {% trans "HES Clinic" %}{% endblock %}
+
+{% block content %}
+<section class="page-header">
+  <div class="container">
+    <h1>{% trans "Our ENT Services" %}</h1>
+    <p>{% trans "Specialist diagnosis and treatment for ear, nose and throat conditions." %}</p>
+  </div>
+</section>
+
+{% for category_label, service_list in grouped_services %}
+  <section class="section {% cycle '' 'section-alt' %}">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>{{ category_label }}</h2>
+      </div>
+
+      <div class="row g-4">
+        {% for service in service_list %}
+          <div class="col-md-6 col-lg-4 reveal">
+            <article class="service-card h-100">
+              <div class="service-icon"><i class="bi {{ service.icon }}"></i></div>
+              <h3>{{ service.title }}</h3>
+              <p>{{ service.description }}</p>
+            </article>
+          </div>
+        {% empty %}
+          <p class="text-muted">{% trans "No services in this category yet." %}</p>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+{% endfor %}
+
+<section class="cta-band">
+  <div class="container text-center">
+    <h2>{% trans "Not sure which service you need?" %}</h2>
+    <p>{% trans "Call us and we will help you find the right consultation." %}</p>
+    <a href="tel:{{ clinic.phone|cut:' ' }}" class="btn btn-accent btn-lg">
+      <i class="bi bi-telephone"></i> {{ clinic.phone }}
+    </a>
+  </div>
+</section>
+{% endblock %}

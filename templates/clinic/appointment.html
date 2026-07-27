@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Book an Appointment" %} – {% trans "HES Clinic" %}{% endblock %}
+
+{% block content %}
+<section class="page-header">
+  <div class="container">
+    <h1>{% trans "Book an Appointment" %}</h1>
+    <p>{% trans "Fill in the form and we will call you to confirm your visit." %}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-7">
+        <form method="post" class="form-card needs-loading" novalidate>
+          {% csrf_token %}
+
+          {% if form.non_field_errors %}
+            <div class="alert alert-danger">{{ form.non_field_errors }}</div>
+          {% endif %}
+
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="{{ form.full_name.id_for_label }}" class="form-label">{% trans "Full name" %}</label>
+              {{ form.full_name }}
+              {% for error in form.full_name.errors %}<div class="field-error">{{ error }}</div>{% endfor %}
+            </div>
+
+            <div class="col-md-6">
+              <label for="{{ form.phone.id_for_label }}" class="form-label">{% trans "Phone" %}</label>
+              {{ form.phone }}
+              {% for error in form.phone.errors %}<div class="field-error">{{ error }}</div>{% endfor %}
+            </div>
+
+            <div class="col-12">
+              <label for="{{ form.email.id_for_label }}" class="form-label">{% trans "Email" %}</label>
+              {{ form.email }}
+              {% for error in form.email.errors %}<div class="field-error">{{ error }}</div>{% endfor %}
+            </div>
+
+            <div class="col-md-6">
+              <label for="{{ form.preferred_date.id_for_label }}" class="form-label">{% trans "Preferred date" %}</label>
+              {{ form.preferred_date }}
+              {% for error in form.preferred_date.errors %}<div class="field-error">{{ error }}</div>{% endfor %}
+            </div>
+
+            <div class="col-md-6">
+              <label for="{{ form.preferred_time.id_for_label }}" class="form-label">{% trans "Preferred time" %}</label>
+              {{ form.preferred_time }}
+              {% for error in form.preferred_time.errors %}<div class="field-error">{{ error }}</div>{% endfor %}
+            </div>
+
+            <div class="col-12">
+              <label for="{{ form.branch.id_for_label }}" class="form-label">{% trans "Branch" %}</label>
+              {{ form.branch }}
+              {% for error in form.branch.errors %}<div class="field-error">{{ error }}</div>{% endfor %}
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-accent btn-lg mt-4">
+            <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+            <i class="bi bi-calendar-check"></i> {% trans "Confirm Booking" %}
+          </button>
+        </form>
+      </div>
+
+      <div class="col-lg-5">
+        <aside class="info-card">
+          <h3>{% trans "Opening Hours" %}</h3>
+          <ul class="list-unstyled hours-list">
+            <li><span>{% trans "Monday – Friday" %}</span><span>08:00 – 18:00</span></li>
+            <li><span>{% trans "Saturday" %}</span><span>08:00 – 12:00</span></li>
+            <li><span>{% trans "Sunday" %}</span><span>{% trans "Closed" %}</span></li>
+          </ul>
+
+          <hr>
+
+          <h3>{% trans "Need help?" %}</h3>
+          <p class="mb-2"><i class="bi bi-telephone"></i> <a href="tel:{{ clinic.phone|cut:' ' }}">{{ clinic.phone }}</a></p>
+          <p class="mb-2"><i class="bi bi-envelope"></i> <a href="mailto:{{ clinic.email }}">{{ clinic.email }}</a></p>
+          <p class="mb-0"><i class="bi bi-geo-alt"></i> {{ clinic.address }}</p>
+        </aside>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

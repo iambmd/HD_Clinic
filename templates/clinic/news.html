@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Health News" %} – {% trans "HES Clinic" %}{% endblock %}
+
+{% block content %}
+<section class="page-header">
+  <div class="container">
+    <h1>{% trans "Health News &amp; Advice" %}</h1>
+    <p>{% trans "Practical guidance from our ENT specialists." %}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="row g-4">
+      {% for article in articles %}
+        <div class="col-md-6 col-lg-4 reveal">
+          <article class="article-card h-100">
+            {% if article.thumbnail %}
+              <img src="{{ article.thumbnail.url }}" alt="{{ article.title }}" class="article-thumb">
+            {% endif %}
+            <div class="article-body">
+              <time class="article-date">{{ article.published_date|date:"d M Y" }}</time>
+              <h3><a href="{{ article.get_absolute_url }}">{{ article.title }}</a></h3>
+              <p>{{ article.excerpt }}</p>
+              <a href="{{ article.get_absolute_url }}" class="read-more">
+                {% trans "Read more" %} <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      {% empty %}
+        <p class="text-muted">{% trans "No articles published yet." %}</p>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}
