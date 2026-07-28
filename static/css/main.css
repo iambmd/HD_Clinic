@@ -92,6 +92,10 @@ a:hover { color: var(--clinic-primary-dark); }
   align-items: center;
   gap: 0.5rem;
 }
+.brand-logo {
+  height: 34px;
+  width: auto;
+}
 .site-nav .nav-link {
   color: var(--clinic-ink);
   font-weight: 500;
@@ -330,7 +334,14 @@ a:hover { color: var(--clinic-primary-dark); }
   padding: 3rem 0 1.5rem;
 }
 .site-footer h6 { color: #fff; margin-bottom: 1rem; }
-.footer-brand { color: #fff; font-weight: 800; margin-bottom: 0.75rem; }
+.footer-brand {
+  display: inline-block;
+  background: #fff;
+  border-radius: var(--clinic-radius);
+  padding: 0.9rem 1.1rem;
+  margin-bottom: 1rem;
+}
+.footer-brand img { width: 180px; height: auto; display: block; }
 .footer-list li { margin-bottom: 0.5rem; color: rgba(255, 255, 255, 0.72); }
 .footer-list a { color: rgba(255, 255, 255, 0.72); }
 .footer-list a:hover { color: var(--clinic-accent); }
