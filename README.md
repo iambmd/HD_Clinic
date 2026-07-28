@@ -247,3 +247,17 @@ pillow>=10.0
 ```
 
 Install: `pip install -r requirements.txt`
+
+---
+
+## License
+
+Source code is released under the [MIT License](LICENSE).
+
+The clinic's brand assets and content are **not** covered by that license and
+remain the property of Phòng Khám Tai Mũi Họng Hữu Đức – HES Clinic. This
+includes the clinic name and logo, the contact details and location, doctor
+profiles and biographies, service descriptions, and article copy.
+
+If you reuse this project, swap in your own branding and content. See the
+[LICENSE](LICENSE) file for the full scope.
