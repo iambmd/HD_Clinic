@@ -70,7 +70,7 @@
 <footer class="site-footer">
   <div class="container">
     <div class="row g-4">
-      <div class="col-lg-4">
+      <div class="col-lg-3 col-md-6">
         <h5 class="footer-brand"><i class="bi bi-hospital"></i> {% trans "HES Clinic" %}</h5>
         <p class="text-muted-light">{{ clinic.name_vi }}</p>
         <p class="text-muted-light small">
@@ -78,7 +78,7 @@
         </p>
       </div>
 
-      <div class="col-lg-4">
+      <div class="col-lg-3 col-md-6">
         <h6>{% trans "Contact" %}</h6>
         <ul class="list-unstyled footer-list">
           <li><i class="bi bi-telephone"></i> <a href="tel:{{ clinic.phone|cut:' ' }}">{{ clinic.phone }}</a></li>
@@ -87,7 +87,7 @@
         </ul>
       </div>
 
-      <div class="col-lg-4">
+      <div class="col-lg-2 col-md-6">
         <h6>{% trans "Quick Links" %}</h6>
         <ul class="list-unstyled footer-list">
           <li><a href="{% url 'clinic:services' %}">{% trans "Services" %}</a></li>
@@ -95,6 +95,22 @@
           <li><a href="{% url 'clinic:news' %}">{% trans "Health News" %}</a></li>
           <li><a href="{% url 'clinic:location' %}">{% trans "Find Us" %}</a></li>
         </ul>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <h6>{% trans "Find Us on the Map" %}</h6>
+        <div class="footer-map">
+          <iframe
+            src="https://www.google.com/maps?q=Ph%C3%B2ng+kh%C3%A1m+tai+m%C5%A9i+h%E1%BB%8Dng+H%E1%BB%AFu+%C4%90%E1%BB%A9c+-+Hes+Clinic&amp;ll=20.9781955,105.7593337&amp;z=17&amp;hl={{ LANGUAGE_CODE|default:'vi' }}&amp;output=embed"
+            width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="{% trans 'Clinic location map' %}"></iframe>
+        </div>
+        <a class="footer-map-link"
+           href="https://www.google.com/maps/place/Ph%C3%B2ng+kh%C3%A1m+tai+m%C5%A9i+h%E1%BB%8Dng+H%E1%BB%AFu+%C4%90%E1%BB%A9c+-+Hes+Clinic/@20.9782005,105.7567588,17z/data=!4m6!3m5!1s0x3135ad0017f10069:0x2a3e633d30d0e77b!8m2!3d20.9781955!4d105.7593337!16s%2Fg%2F11z2jf9281"
+           target="_blank" rel="noopener">
+          <i class="bi bi-signpost-2"></i> {% trans "Get directions" %}
+        </a>
       </div>
     </div>
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-27 11:30-0400\n"
+"POT-Creation-Date: 2026-07-28 13:41-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -215,13 +215,17 @@ msgstr "Phòng khám nghỉ vào %(day)s."
 msgid ""
 "The clinic is open %(hours)s on %(day)s. Please choose a time within those "
 "hours."
-msgstr "Phòng khám mở cửa %(hours)s vào %(day)s. Vui lòng chọn giờ trong khung giờ đó."
+msgstr ""
+"Phòng khám mở cửa %(hours)s vào %(day)s. Vui lòng chọn giờ trong khung giờ "
+"đó."
 
 #: .\clinic\opening_hours.py:89
 msgid ""
 "That time has already passed today. Please choose a later time or another "
 "day."
-msgstr "Giờ này đã qua trong ngày hôm nay. Vui lòng chọn giờ muộn hơn hoặc một ngày khác."
+msgstr ""
+"Giờ này đã qua trong ngày hôm nay. Vui lòng chọn giờ muộn hơn hoặc một ngày "
+"khác."
 
 #: .\clinic\views.py:48
 msgid ""
@@ -244,7 +248,7 @@ msgid "Vietnamese"
 msgstr "Tiếng Việt"
 
 #: .\templates\base.html:6 .\templates\base.html:18 .\templates\base.html:74
-#: .\templates\base.html:103 .\templates\clinic\about.html:4
+#: .\templates\base.html:119 .\templates\clinic\about.html:4
 #: .\templates\clinic\appointment.html:4
 #: .\templates\clinic\article_detail.html:4 .\templates\clinic\contact.html:4
 #: .\templates\clinic\location.html:4 .\templates\clinic\news.html:4
@@ -317,11 +321,23 @@ msgstr "Tin tức sức khỏe"
 msgid "Find Us"
 msgstr "Tìm đường"
 
-#: .\templates\base.html:103
+#: .\templates\base.html:101
+msgid "Find Us on the Map"
+msgstr "Vị trí trên bản đồ"
+
+#: .\templates\base.html:107 .\templates\clinic\location.html:23
+msgid "Clinic location map"
+msgstr "Bản đồ vị trí phòng khám"
+
+#: .\templates\base.html:112
+msgid "Get directions"
+msgstr "Chỉ đường"
+
+#: .\templates\base.html:119
 msgid "All rights reserved."
 msgstr "Bảo lưu mọi quyền."
 
-#: .\templates\base.html:108
+#: .\templates\base.html:124
 msgid "Call now"
 msgstr "Gọi ngay"
 
@@ -555,10 +571,6 @@ msgstr "Sẵn sàng gặp chuyên gia?"
 msgid "Book an appointment today and get expert ENT care."
 msgstr "Đặt lịch hẹn hôm nay để được chăm sóc Tai Mũi Họng chuyên sâu."
 
-#: .\templates\clinic\location.html:23
-msgid "Clinic location map"
-msgstr "Bản đồ vị trí phòng khám"
-
 #: .\templates\clinic\location.html:29
 msgid "Address"
 msgstr "Địa chỉ"
@@ -590,9 +602,3 @@ msgstr "Chưa rõ bạn cần dịch vụ nào?"
 #: .\templates\clinic\services.html:41
 msgid "Call us and we will help you find the right consultation."
 msgstr "Hãy gọi cho chúng tôi để được tư vấn phù hợp."
-
-#~ msgid "Saturday"
-#~ msgstr "Thứ Bảy"
-
-#~ msgid "Sunday"
-#~ msgstr "Chủ Nhật"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-27 11:30-0400\n"
+"POT-Creation-Date: 2026-07-28 13:41-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -242,7 +242,7 @@ msgid "Vietnamese"
 msgstr ""
 
 #: .\templates\base.html:6 .\templates\base.html:18 .\templates\base.html:74
-#: .\templates\base.html:103 .\templates\clinic\about.html:4
+#: .\templates\base.html:119 .\templates\clinic\about.html:4
 #: .\templates\clinic\appointment.html:4
 #: .\templates\clinic\article_detail.html:4 .\templates\clinic\contact.html:4
 #: .\templates\clinic\location.html:4 .\templates\clinic\news.html:4
@@ -315,11 +315,23 @@ msgstr ""
 msgid "Find Us"
 msgstr ""
 
-#: .\templates\base.html:103
+#: .\templates\base.html:101
+msgid "Find Us on the Map"
+msgstr ""
+
+#: .\templates\base.html:107 .\templates\clinic\location.html:23
+msgid "Clinic location map"
+msgstr ""
+
+#: .\templates\base.html:112
+msgid "Get directions"
+msgstr ""
+
+#: .\templates\base.html:119
 msgid "All rights reserved."
 msgstr ""
 
-#: .\templates\base.html:108
+#: .\templates\base.html:124
 msgid "Call now"
 msgstr ""
 
@@ -539,10 +551,6 @@ msgstr ""
 
 #: .\templates\clinic\home.html:137
 msgid "Book an appointment today and get expert ENT care."
-msgstr ""
-
-#: .\templates\clinic\location.html:23
-msgid "Clinic location map"
 msgstr ""
 
 #: .\templates\clinic\location.html:29
