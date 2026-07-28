@@ -17,11 +17,16 @@
       <div class="col-lg-8">
         <div class="map-embed">
           <iframe
-            src="https://www.google.com/maps?q={{ clinic.address|urlencode }}&output=embed"
+            src="https://www.google.com/maps?q=Ph%C3%B2ng+kh%C3%A1m+tai+m%C5%A9i+h%E1%BB%8Dng+H%E1%BB%AFu+%C4%90%E1%BB%A9c+-+Hes+Clinic&amp;ll=20.978195,105.759334&amp;z=17&amp;hl={{ LANGUAGE_CODE|default:'vi' }}&amp;output=embed"
             width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
             title="{% trans 'Clinic location map' %}"></iframe>
         </div>
+        <a class="map-directions-link"
+           href="https://www.google.com/maps/place/Ph%C3%B2ng+kh%C3%A1m+tai+m%C5%A9i+h%E1%BB%8Dng+H%E1%BB%AFu+%C4%90%E1%BB%A9c+-+Hes+Clinic/@20.978195,105.759334,17z/data=!4m6!3m5!1s0x3135ad0017f10069:0x2a3e633d30d0e77b!8m2!3d20.9781955!4d105.7593337!16s%2Fg%2F11z2jf9281"
+           target="_blank" rel="noopener">
+          <i class="bi bi-signpost-2"></i> {% trans "Get directions" %}
+        </a>
       </div>
 
       <div class="col-lg-4">

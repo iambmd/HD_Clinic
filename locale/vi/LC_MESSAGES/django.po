@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-28 13:41-0400\n"
+"POT-Creation-Date: 2026-07-28 14:13-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -308,7 +308,7 @@ msgstr "Liên kết nhanh"
 
 #: .\templates\base.html:94 .\templates\clinic\appointment.html:4
 #: .\templates\clinic\appointment.html:9 .\templates\clinic\home.html:17
-#: .\templates\clinic\home.html:139 .\templates\clinic\location.html:47
+#: .\templates\clinic\home.html:139 .\templates\clinic\location.html:52
 msgid "Book an Appointment"
 msgstr "Đặt lịch hẹn"
 
@@ -329,7 +329,7 @@ msgstr "Vị trí trên bản đồ"
 msgid "Clinic location map"
 msgstr "Bản đồ vị trí phòng khám"
 
-#: .\templates\base.html:112
+#: .\templates\base.html:112 .\templates\clinic\location.html:28
 msgid "Get directions"
 msgstr "Chỉ đường"
 
@@ -448,7 +448,7 @@ msgstr "Chi nhánh"
 msgid "Confirm Booking"
 msgstr "Xác nhận đặt lịch"
 
-#: .\templates\clinic\appointment.html:72 .\templates\clinic\location.html:34
+#: .\templates\clinic\appointment.html:72 .\templates\clinic\location.html:39
 msgid "Opening Hours"
 msgstr "Giờ làm việc"
 
@@ -571,7 +571,7 @@ msgstr "Sẵn sàng gặp chuyên gia?"
 msgid "Book an appointment today and get expert ENT care."
 msgstr "Đặt lịch hẹn hôm nay để được chăm sóc Tai Mũi Họng chuyên sâu."
 
-#: .\templates\clinic\location.html:29
+#: .\templates\clinic\location.html:34
 msgid "Address"
 msgstr "Địa chỉ"
 

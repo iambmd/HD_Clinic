@@ -307,6 +307,12 @@ a:hover { color: var(--clinic-primary-dark); }
   box-shadow: var(--clinic-shadow);
   line-height: 0;
 }
+.map-directions-link {
+  display: inline-block;
+  margin-top: 0.85rem;
+  font-weight: 600;
+}
+.map-directions-link i { color: var(--clinic-accent); margin-right: 0.4rem; }
 
 /* ── CTA band ────────────────────────────────────────── */
 .cta-band {
